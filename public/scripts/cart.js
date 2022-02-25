@@ -1,11 +1,11 @@
 function cont() {
-  window.location.href = "../products/products.html";
+  window.location.href = "/product";
 }
 function update() {
   window.location.href = "/cart";
 }
 function payment() {
-  window.location.href = "../Payment/Address.html";
+  window.location.href = "/Address";
 }
 let main = document.querySelector("#cart_section");
 let arr = JSON.parse(localStorage.getItem("cart_data")) || [];
@@ -79,7 +79,8 @@ function append_data(arr) {
       localStorage.setItem("cart_data", JSON.stringify(arr));
       append_data(arr);
       let total_arr =
-        JSON.parse(localStorage.getItem("cart_data", JSON.stringify(arr))) || [];
+        JSON.parse(localStorage.getItem("cart_data", JSON.stringify(arr))) ||
+        [];
 
       console.log(total_arr);
       let total_price = 0;

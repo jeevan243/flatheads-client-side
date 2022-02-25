@@ -1,19 +1,16 @@
 var userdata = JSON.parse(localStorage.getItem("userdatabase")) || [];
 
-document.querySelector('.addressform').addEventListener('submit', adddata)
+document.querySelector(".addressform").addEventListener("submit", adddata);
 
 //const path = require("path")
 //const path = require("path")
-
 
 //document.querySelector(".myform").addEventListener("submit", adddata);
-
 
 //console.log(path.join(__dirname, "../views/shipping"))
 
 function adddata(event) {
-
-  event.preventDefault()
+  event.preventDefault();
 
   var email = document.getElementById("email").value;
   var firstname = document.getElementById("firstname").value;
@@ -24,87 +21,50 @@ function adddata(event) {
   var phone = document.getElementById("phone").value;
 
   if (email == "") {
-
-    document.getElementById("emailid").innerHTML = "Enter a valid email"
+    document.getElementById("emailid").innerHTML = "Enter a valid email";
+    return false;
+  } else if (firstname == "") {
+    document.getElementById("firstnamediv").innerHTML = "Enter an First name";
+    return false;
+  } else if (address == "") {
+    document.getElementById("youraddress").innerHTML = "**Enter an address ";
+    return false;
+  } else if (city == "") {
+    document.getElementById("citydiv").innerHTML = " Enter a city";
+    return false;
+  } else if (pincode == "") {
+    document.getElementById("pincodediv").innerHTML = "Enter a PIN code";
+    return false;
+  } else if (phone == "") {
+    document.getElementById("phonediv").innerHTML =
+      "Enter a phone number to use this delivery method";
     return false;
   }
 
-
-
-  else if (firstname == "") {
-    document.getElementById("firstnamediv").innerHTML = "Enter an First name"
-    return false;
-  }
-
-
-
-  else if (address== "") {
-    document.getElementById("youraddress").innerHTML = "**Enter an address "
-     return false;
-  }
-
-
-  else if (city == "") {
-    document.getElementById("citydiv").innerHTML = " Enter a city"
-    return false;
-  }
-
-
-  else if (pincode == "") {
-    document.getElementById("pincodediv").innerHTML = "Enter a PIN code"
-    return false;
-  }
-
-
-  else if (phone == "") {
-    document.getElementById("phonediv").innerHTML = "Enter a phone number to use this delivery method"
-    return false;
-  }
-
-
-
-
-  console.log("success")
-
-
-
+  console.log("success");
 
   var email = document.querySelector("#email").value;
   var address = document.querySelector("#address").value;
 
-
   var userinformation = {
-
     email: email,
     address: address,
   };
 
-console.log(userinformation)
+  console.log(userinformation);
   userdata.push(userinformation);
 
-  localStorage.setItem("userdatabase", JSON.stringify(userdata))
+  localStorage.setItem("userdatabase", JSON.stringify(userdata));
+  console.log("here");
 
-
-
-
-  window.location.href = "/shipping"
+  window.location.href = "/shipping";
 }
-
-
-
-
-
-
 
 //checking
 
-
 // document.querySelector("#checkbtn").addEventListener("click", crosscheck);
 
-
-
 // var registeruser = JSON.parse(localStorage.getItem("userdatabase"))
-
 
 // function crosscheck() {
 
@@ -114,8 +74,6 @@ console.log(userinformation)
 //     var checkemail = document.querySelector("#emailcheck").value;
 
 //     var checkaddress= document.querySelector("#addresscheck").value;
-
-
 
 //     if(checkemail == "admin@123"  && checkaddress == "@123"){
 
@@ -142,16 +100,13 @@ console.log(userinformation)
 //              alert("login Successful")
 //             }
 
-
 //             else{
 //                 alert("your data is not registered")
 //             }
 
 //         }
 
-
 //    // console.log("loginsuccessful")
-
 
 //appending the items
 
@@ -161,35 +116,28 @@ let items = JSON.parse(localStorage.getItem("cart_data")) || [];
 
 append_data(items);
 
-
-
 var price1 = document.getElementById("show_sub");
 
 function append_data(arr) {
   let total_pr = 0;
   document.getElementById("cart_section").innerHTML = "";
 
- 
   arr.map((elm, index) => {
-    
     let count = 1;
     total_pr += Number(elm.final_price);
     console.log(total_pr);
-    
+
     // price1.innerText = total_pr;
 
     let div = document.createElement("div");
-    div.setAttribute("id", "cart_box")
+    div.setAttribute("id", "cart_box");
 
-
-
-    container.append(div)
+    container.append(div);
     let image = document.createElement("img");
     image.src = elm.image1;
     image.style.height = "50%";
     image.style.width = "20%";
     image.style.marginLeft = "2%";
-
 
     image.style.marginTop = "3%";
     let title_div = document.createElement("div");
@@ -199,32 +147,29 @@ function append_data(arr) {
     size.setAttribute("id", "size_para");
     size.innerText = Math.ceil(Math.random() * 10);
 
-
     let remove = document.createElement("button");
     remove.addEventListener("click", function () {
-
       arr.splice(index, 1);
-      console.log(arr)
-      container.innerText = '';
+      console.log(arr);
+      container.innerText = "";
 
       localStorage.setItem("new_data", JSON.stringify(arr));
       append_data(arr);
-      let total_arr = JSON.parse(localStorage.getItem("new_data", JSON.stringify(arr))) || [];
+      let total_arr =
+        JSON.parse(localStorage.getItem("new_data", JSON.stringify(arr))) || [];
 
       console.log(total_arr);
       let total_price = 0;
-      total_arr.map(elm => {
+      total_arr.map((elm) => {
         total_price += Number(elm.final_price);
-
-      })
-
-    })
+      });
+    });
 
     remove.setAttribute("id", "remove_btn");
     remove.innerText = "REMOVE";
     title_div.append(size, remove);
     let div_right = document.createElement("div");
-  
+
     div_right.setAttribute("id", "right_div");
     let price = document.createElement("p");
     price.setAttribute("id", "price");
@@ -241,7 +186,6 @@ function append_data(arr) {
     total.innerText = `Rs.${elm.final_price}.00`;
     total.setAttribute("id", "total");
     let change_div = document.createElement("div");
-    
 
     change_div.setAttribute("id", "changeDiv");
     let add_div = document.createElement("div");
@@ -265,9 +209,10 @@ function append_data(arr) {
 
       ////sub-total value////
       document.querySelector("#show_sub").innerText = "";
-      document.querySelector("#show_sub").innerText = `Rs.${total_pr + total_val}.00 `;
+      document.querySelector("#show_sub").innerText = `Rs.${
+        total_pr + total_val
+      }.00 `;
     }
-
 
     let min_div = document.createElement("div");
     min_div.setAttribute("id", "min_div");
@@ -282,7 +227,7 @@ function append_data(arr) {
       if (count == 0) {
         total_pr = total_pr - Number(elm.final_price);
         arr.splice(index, 1);
-        console.log(arr)
+        console.log(arr);
         localStorage.setItem("cart_data", JSON.stringify(arr));
         if (arr.length == 0) {
           total_pr = 0;
@@ -302,23 +247,22 @@ function append_data(arr) {
       ////total val////
       total.innerText = `Rs.${total_val}.00`;
 
-
       ////sub-total value////
       document.querySelector("#show_sub").innerText = "";
-      document.querySelector("#show_sub").innerText = `Rs.${total_pr + total_val}.00 `;
+      document.querySelector("#show_sub").innerText = `Rs.${
+        total_pr + total_val
+      }.00 `;
     }
 
     change_div.append(add_div, min_div);
     div_right.append(price, quantity, total);
-    quantity.append(val_div, change_div)
+    quantity.append(val_div, change_div);
 
-    div.append(image, title_div, div_right)
+    div.append(image, title_div, div_right);
     container.append(div);
-
-  })
+  });
 }
 
-
 // document.querySelector(".submit").addEventListener("click", () => {
-//    window.location.href = "/shipping"
-// })
+//   window.location.href = "/shipping";
+// });

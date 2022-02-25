@@ -1,159 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shipping Page</title>
 
-    <link rel="stylesheet" href="../css/Address.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="../css/Address.css" />
+  </head>
+  <body>
     <div id="container">
+      <div id="left_address_box">
+        <div id="flathadslogo">
+          <a href="/"> <img src="../images/flatsheads_logo.png" alt="" /></a>
 
+          <div id="c_i_s_p">
+            <div class="cart"><a href="/cart"> Cart »</a></div>
+            <div class="information"><a href="/">Information »</a></div>
+            <div class="shipping"><a href="/shipping">Shipping »</a></div>
+            <div class="payment"><a href="/payment"> Payment </a></div>
+          </div>
+        </div>
+        <!--end logo div-->
+        <!--end logo div-->
 
-    
-
-        <div id="left_address_box">
-    
-    
-    
-            <div id="flathadslogo"> <a href="../landing/index.html"> <img src="../images/flatsheads_logo.png" alt=""></a>
-            
-                <div id="c_i_s_p">
-    
-                    <div class="cart"> <a href="../signin/cart.html">  Cart »</a></div>
-                <div class="information"> <a href="../landing/index.html">Information »</a></div>
-                <div class="shipping"> <a href="../Payment/card.html">Shipping »</a></div>
-                <div class="payment"> <a href="../Payment/card.html"> Payment </a> </div>
-    
-                </div>
-            </div>                                                             <!--end logo div-->
-
-
-
-            <div id="inputmaindiv">
-
-
+        <div id="inputmaindiv">
           <div id="istbox">
-
             <div id="contact">Contact</div>
-            <input type="email" name="" id="emailcheck" placeholder="Enter your Email">
-            <div id="change">  <a href="/Address">Change</a></div>
+            <input
+              type="email"
+              name=""
+              id="emailcheck"
+              placeholder="Enter your Email"
+            />
+            <div id="change"><a href="/Address">Change</a></div>
           </div>
 
           <div id="dividerii"></div>
 
-
-
           <div id="istbox">
-
             <div id="contact">Ship to</div>
-            <input type="text" name="" id="addresscheck" placeholder="Enter your address">
-            <div id="change">  <a href="/Address">Change</a></div>
+            <input
+              type="text"
+              name=""
+              id="addresscheck"
+              placeholder="Enter your address"
+            />
+            <div id="change"><a href="/Address">Change</a></div>
           </div>
+        </div>
 
+        <div id="shippingdiv">
+          <div id="shippingmethod">Shipping method</div>
+          <div id="boxship">
+            <div id="circle"></div>
+            <div id="freeship">Free Shipping</div>
+            <div id="free">Free</div>
+          </div>
+        </div>
 
+        <div id="btn_return">
+          <!--buttondiv-->
 
-            </div>
+          <!--- <input type="submit" name="Continue" id="submit" value="Continue to shipping" >    -->
 
+          <button id="checkbtn">Continue to shipping</button>
 
+          <div id="returntocart">
+            <a href="/cart">Return to cart</a>
+          </div>
+        </div>
+      </div>
 
-
-
-    
-
-            <div id="shippingdiv">
-
-                <div id="shippingmethod">Shipping method</div>
-                <div id="boxship"> 
-                    <div id="circle"></div>
-                    <div id="freeship">Free Shipping</div>
-                    <div id="free">Free</div>
-                </div>
-            </div>
-
-
-
-            <div id="btn_return">                                           <!--buttondiv-->
-
-               <!--- <input type="submit" name="Continue" id="submit" value="Continue to shipping" >    -->
-
-               <button id="checkbtn">Continue to shipping</button>
-
-
-               <div id="returntocart"> <a href="../signin/cart.html">Return to cart</a>   </div>
-              </div>
- 
-
-            </div>
-
-
-            <div id="divider"> </div>      <!--divider-->
-
+      <div id="divider"></div>
+      <!--divider-->
     </div>
-
-</body>
+  </body>
 </html>
 
 <!--<script src="Address.js"></script>   -->
 
-
 <script>
+  document.getElementById("checkbtn").addEventListener("click", checkfun);
 
-  document.getElementById("checkbtn").addEventListener("click", checkfun)
+  var registeruser = JSON.parse(localStorage.getItem("userdatabase"));
 
-  var registeruser = JSON.parse(localStorage.getItem("userdatabase"))
-
-
-
-  function checkfun(){
-
-    console.log("successbtn")
+  function checkfun() {
+    console.log("successbtn");
 
     var checkemail = document.querySelector("#emailcheck").value;
 
-    var checkaddress= document.querySelector("#addresscheck").value;
+    var checkaddress = document.querySelector("#addresscheck").value;
 
+    if (checkemail == "admin@123" && checkaddress == "@123") {
+      window.location.href = "main.html";
+    } else {
+      for (var i = 0; i < registeruser.length; i++) {
+        if (
+          registeruser[i].email == checkemail &&
+          registeruser[i].address == checkaddress
+        ) {
+          //window.location.href = "../Payment/checkout.html"            // this path is github
 
+          window.location.href = "/checkout";
 
-    if(checkemail == "admin@123"  && checkaddress == "@123"){
+          var flag = true;
+          break;
+        }
+      }
 
-        window.location.href = "main.html"
-     }
+      if (flag) {
+        alert(
+          "Please confirm once, Do you want to order the product at this address ? "
+        );
+      } else {
+        alert("your data is not registered");
+      }
+    }
 
-     else{
-
-        for(var i = 0; i < registeruser.length; i++){
-
-            if(registeruser[i].email == checkemail  &&  registeruser[i].address== checkaddress ){
-
-                //window.location.href = "../Payment/checkout.html"            // this path is github
-
-                window.location.href = "/checkout"
-
-                 var flag = true;
-                 break;
-
-             }
-
-         }
-
-             if(flag){
-             alert("Please confirm once, Do you want to order the product at this address ? ")
-             }
-
-
-            else{
-                 alert("your data is not registered")
-             }
-
-         }
-    
-         console.log("loginsuccessful")
-         
-
-
+    console.log("loginsuccessful");
   }
 </script>

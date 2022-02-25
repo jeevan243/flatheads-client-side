@@ -76,10 +76,23 @@ app.get(
   }),
   (req, res) => {
     console.log(req.user);
-   return res.render("home.ejs");
-   
+    return res.render("home.ejs");
   }
 );
+
+//akib
+app.get("/Address", function (req, res) {
+  res.render("Address.ejs");
+});
+
+app.get("/shipping", function (req, res) {
+  res.render("shipping.ejs");
+});
+
+app.get("/checkout", function (req, res) {
+  res.render("checkout.ejs");
+});
+
 //paynow page
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
   // Route for making payment
