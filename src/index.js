@@ -3,6 +3,12 @@ const connect = require("./config/db");
 require("dotenv").config();
 const productsContrller = require("./controllers/product.controller");
 
+const parseUrl = express.urlencoded({ extended: false });
+const parseJson = express.json({ extended: false });
+
+const checksum_lib = require("./Paytm/checksum");
+const config = require("./Paytm/config");
+
 const Port1 = process.env.Port || 1234;
 const app = express();
 app.use(express.json());
@@ -13,7 +19,6 @@ app.use(express.static("public"));
 
 // app.set("views", "views");
 app.set("view Engine", "ejs");
-
 
 // all page redirection
 //home pager
