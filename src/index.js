@@ -1,6 +1,8 @@
 const express = require("express");
 const connect = require("./config/db");
 require("dotenv").config();
+const {register,signin} = require("./controllers/auth.controller");
+const passport = require("./config/google_oauth")
 const productsContrller = require("./controllers/product.controller");
 
 const parseUrl = express.urlencoded({ extended: false });
@@ -12,8 +14,14 @@ const config = require("./Paytm/config");
 const Port1 = process.env.Port || 1234;
 const app = express();
 app.use(express.json());
-
+app.get("/register",async(req,res)=>{
+  return res.render("register.ejs")
+});
 app.use("/products", productsContrller);
+
+app.post("/login",register);
+app.post("/homepage",signin);
+
 
 app.use(express.static("public"));
 
@@ -45,7 +53,26 @@ app.get("/cart", (req, res) => {
 app.get("/payment", async (req, res) => {
   return res.render("payment.ejs");
 });
-
+passport.serializeUser(function(user, done) {
+    done(null, user);
+  });
+  
+  passport.deserializeUser(function(user, done) {
+    done(null, user);
+  });
+app.get('/auth/google',
+  passport.authenticate('google', { scope:
+  	[ 'email', 'profile' ] }
+));
+ 
+app.get( '/auth/google/callback',
+    passport.authenticate( 'google', {
+      
+        failureRedirect: '/auth/google/failure'
+}),(req,res) =>{
+    console.log(req.user)
+    res.render("homepage.ejs");
+});
 //paynow page
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
   // Route for making payment
