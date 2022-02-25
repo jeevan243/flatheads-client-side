@@ -76,7 +76,8 @@ app.get(
   }),
   (req, res) => {
     console.log(req.user);
-    res.render("home.ejs");
+   return res.render("home.ejs");
+   
   }
 );
 //paynow page

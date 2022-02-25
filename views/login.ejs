@@ -7,19 +7,15 @@
     <title>Sign-in</title>
   
     <link rel="stylesheet" href="/css/login.css">
-   <!-- <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/bottomFooter.css">
-    <script
-      src="https://kit.fontawesome.com/683b4b40e3.js"
-      crossorigin="anonymous"
-    ></script> --> 
-   
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/bottomFooter.css" />
+       
 
 
 </head>
 <body>
     
-    <div class="header"></div>
+  <%- include("partials/header.ejs") %>
       
         <div class="contain">
             <h1>LOGIN</h1>
@@ -49,7 +45,7 @@
 
     </form>
   
-   <!-- <div class="footer"></div> -->
+    <%- include("partials/bottomFooter.ejs") %>
  
 </body>
 </html>
