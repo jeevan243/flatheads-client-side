@@ -3,9 +3,9 @@ let products1 = document.getElementById("products");
 async function callProudcts() {
   try {
     let responce = await fetch("https://flatheads.herokuapp.com/products");
-
     let products = await responce.json();
     let arr = products.Product;
+    console.log("arr", arr);
     displayProducts(arr);
   } catch (error) {
     return res.send(error);

@@ -64,11 +64,13 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
   done(null, user);
 });
+
 app.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["email", "profile"] })
 );
 
+//google auth
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
@@ -80,15 +82,17 @@ app.get(
   }
 );
 
-//akib
+//address page
 app.get("/Address", function (req, res) {
   res.render("Address.ejs");
 });
 
+//shipping page
 app.get("/shipping", function (req, res) {
   res.render("shipping.ejs");
 });
 
+//checkout page
 app.get("/checkout", function (req, res) {
   res.render("checkout.ejs");
 });
