@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: Roobert, sans-serif;
+}
+.header {
+  /* border: 1px solid teal; */
+  font-size: 16px;
+}
+
+/* top header  */
+.top-header {
+  display: flex;
+  justify-content: right;
+  margin: auto;
+  padding: 0.8rem;
+  background-color: #c9fee6;
+  /* background-color: cornflowerblue; */
+}
+
+.animate-heading {
+  margin-right: 5%;
+  font-size: 13.6px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.side-icons {
+  margin-left: 4%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top-header > .side-icons {
+  margin-right:  12%;
+  margin-left: 10%;
+}
+
+.side-icons a {
+  color: #000000;
+}
+
+/* icon header  */
+.icon-header {
+  /* height: 40px; */
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* flathead logo  */
+.flathead-logo {
+  height: 25px;
+}
+
+.icon-header i {
+  font-size: 1.2rem;
+}
+
+/* list header  */
+.menu-items {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid teal; */
+  justify-content: center;
+}
+.list-header a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.list-header ul {
+  list-style: none;
+}
+.menu-items li {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.menu-items li:hover {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid red;
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown:hover a {
+  color: #333333;
+  font-size: 1rem;
+  line-height: 26px;
+}
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  width: 170%;
+  margin: 9% auto;
+  /* top: 170%; */
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  /* border: 1px solid dodgerblue; */
+}
+
+.discount-off {
+  color: red;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.dropdown:hover .dropdown-menu {
+  top: 34px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 1;
+  visibility: visible;
+}
+.dropdown-menu li {
+  display: block;
+}
+.drop {
+  text-decoration: none;
+}
+.mega-menu {
+  position: absolute;
+  /* position: relative; */
+  left: 0;
+  /* width: 80vw; */
+  top: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.mega-menu .content {
+  position: relative;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  top: 70px;
+  left: 30px;
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.content .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-items li:hover .mega-menu {
+  top: 86px;
+  opacity: 1;
+  visibility: visible;
+}
+.img-wrapper {
+  /* width: 210px; */
+  /* position: relative; */
+  overflow: hidden;
+}
+.img-wrapper > img {
+  width: 100%;
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+.content .col .img-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+h2 {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 14px;
+
+  font-weight: 500;
+  /* font-size: 1rem; */
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.users {
+  justify-content: space-between;
+}
+
+.users> i{
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.side-icons i{
+  font-size: 1.3rem;
+}
+/* https://cdn.shopify.com/s/files/1/0258/2485/4100/collections/Collection2_400x.jpg?v=1631079294 */
+/* //cdn.shopify.com/s/files/1/0258/2485/4100/collections/Banner01_1_400x.png?v=1629264715 */
+/* //cdn.shopify.com/s/files/1/0258/2485/4100/collections/aurea-collection-banner-optimised_400x.jpg?v=1604423112 */
+/* //cdn.shopify.com/s/files/1/0258/2485/4100/collections/banner-1-optimised_400x.jpg?v=1602872403 */
+/* //cdn.shopify.com/s/files/1/0258/2485/4100/collections/Studio-Session-644-cropped_400x.jpg?v=1602871612 */

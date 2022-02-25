@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/Product page.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/bottomFooter.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <!-- <p>fgfdf</p> -->
+    <div id="pcontainer">
+      <br />
+      <div id="Productpage">
+        <div class="divide50">
+          <div>
+            <div id="leftimg">
+              <!-- <img onmouseover="a()" src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure8_720x.jpg?v=1636735909" alt="" width="100%" height="20%">
+                        <img onmouseover="b()"  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure9_720x.jpg?v=1636735906" alt="" width="100%" height="20%">
+                        <img onmouseover="c()"  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure1_1800x1800.jpg?v=1636735907" alt=""  width="100%" height="20%">
+                        <img onmouseover="d()"  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure2_1800x1800.jpg?v=1636735907" alt=""  width="100%" height="20%">
+                        <img onmouseover="e()"  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure3_1800x1800.jpg?v=1637613646" alt=""  width="100%" height="20%">
+                        <img onmouseover="f()"  src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure4_1800x1800.jpg?v=1637613646" alt=""  width="100%" height="20%"> -->
+            </div>
+            <div id="rightimg">
+              <!-- <img  id="right" src="https://cdn.shopify.com/s/files/1/0258/2485/4100/products/Azure8_1800x1800.jpg?v=1636735909" alt="" width="100%" height="100%"> -->
+            </div>
+          </div>
+          <div class="ptag">
+            <!-- <h1 id="name">LUFT AZURE BLUE MELANGE</h1> -->
+            <div id="name"></div>
+            <!-- <h2>Rs.3,329.00</h2> -->
+            <div id="priceinline">
+              <div>Rs.<span id="cut_price"></span>.00</div>
+              <div><span id="pricefix"></span></div>
+              <div id="savem">Save 17%</div>
+            </div>
+            <p>inclusive of all taxes</p>
+            <br />
+            <div id="ylwbox">
+              <p>
+                FLAT 25% OFF. USE CODE: COMFORT, GET AN ADDITIONAL 10% OFF USING
+                BLAZE UPI
+              </p>
+            </div>
+            <br />
+            <p>or 4 interest-free payments of Rs. 832.25 with Sezzle</p>
+            <p>Get an additional 20% cashback up to Rs.500/- using Sezzle</p>
+            <br />
+            <!-- <hr /> -->
+            <br /><br />
+            <div id="colordisplay">
+              <div><h3>COLOR</h3></div>
+              <div>
+                <select name="" id="colorselect">
+                  <option value="">Select Color</option>
+                  <option value="antiquewhite">antiquewhite</option>
+                  <option value="green">green</option>
+                  <option value="tan">tan</option>
+                  <option value="gray">gray</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <div class="color">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <br /><br />
+            <div id="chart">
+              <div><h3>SIZE:</h3></div>
+              <div>
+                <select name="" id="sizechart">
+                  <option value="">Select Size</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <div class="size">
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+            </div>
+            <br /><br />
+            <h3>QUANTITY</h3>
+            <br />
+            <select name="" id="select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <br /><br /><br />
+            <img
+              id="gpay"
+              src="https://lh3.googleusercontent.com/nRkUyXf_7zH9AgKYBlEMC1FcR2dh-uq1T9d17oQr4S4WOrn2rFlRsG5UwwM-MIRNlCU1vdymri5Rr4hh01GOoremwmJennA2IUlQOjE"
+              alt=""
+            />
+            <br />
+
+            <div id="wishlist">
+              <button onclick="addItem()" id="button12">ADD TO CART</button>
+              <button>DEBIT / CREDIT CARD , EMI</button>
+            </div>
+            <br /><br />
+            <div class="ptag">
+              <p>or 4 interest-free payments of Rs. 832.25 with Sezzle</p>
+              <p>Get an additional 20% cashback up to Rs.500/- using Sezzle</p>
+            </div>
+            <br />
+
+            <br />
+            <p>✓ FREE Shipping across India for prepaid orders</p>
+            <p>✓ FREE 7-day returns/exchanges</p>
+            <p>✓ Dispatches within 24 hours</p>
+            <p>
+              ✓ Delivers within 8-10 days across India except lockdown zones
+            </p>
+            <br />
+            <h3>CHECK COD AVAILABILITY</h3>
+            <br />
+            <input id="inp" type="text" placeholder="potal code e.g.501401" />
+            <button id="btn">CHECK</button><br /><br />
+            <div id="condition">
+              <div class="accordionItem open">
+                <h2 class="accordionItemHeading">
+                  View COD Terms & Conditions
+                </h2>
+                <div class="accordionItemContent">
+                  <p>
+                    1.Cash on delivery is only serviceable in specific cities
+                    and pin codes. You can check if your location is eligible
+                    for COD via the availability checker above.
+                  </p>
+                  <br />
+                  <p>
+                    2.In case of COD orders, order confirmation will be required
+                    from the recipient over call. Orders will not be dispatched
+                    until phone confirmation is completed.
+                  </p>
+                  <br />
+                  <p>
+                    3.COD payment can be accepted by cash or credit/debit card.
+                    E-vouchers, store credit or foreign currency cannot be
+                    accepted as mode of payment.
+                  </p>
+                  <br />
+                  <p>
+                    4.For COD orders refunds will be provided via store credit
+                    equivalent to the total order value. We cannot refund the
+                    amount by any other method, such as UPI or bank transfer.
+                    Shipping fee for COD order is non-refundable.
+                  </p>
+                  <br />
+                  <p>
+                    5.Any dispute arising due to COD is subject to the
+                    jurisdiction of Bangalore, Karnataka.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0258/2485/4100/files/Luft_Size_ChartPS.jpg?v=1635677226"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="btm">
+          <h2 id="des">DESCIPTION</h2>
+          <p>
+            Our lightest sneaker yet. Slip into the stylish, comfortable and
+            super breathable Luft.
+          </p>
+          <br />
+          <!-- <hr /> -->
+          <br />
+          <h3>Why Luft?</h3>
+          <p>
+            Super lightweight: Yes, we made our LIGHTEST sneaker! Breathable:
+            Designed with increased breathable area Easy to slip-on: Tongue-less
+            design makes it easy to wear! One time lacing: Designed to stay for
+            a long, long time. Simplistic Design. Better features. Comes in 6
+            stylish colours.
+          </p>
+          <br /><br />
+          <h3>Materials:</h3>
+          <br /><br />
+          <p>
+            <li>Upper: Synthetic knit-fibre</li>
+            <li>Insole: PU foam (pillows for your feet)</li>
+            <li>Sole: EVA (shock and water resistant</li>
+            <br /><br />
+          </p>
+          <h3>Styling:</h3>
+          <br /><br />
+          <li>Elegant, minimalistic, stylish</li>
+          <li>Perfect for: Casual wear, semi-formal wear</li>
+          <li>
+            Best Paired With: Jeans, Chinos, Joggers, Shorts - everything casual
+            or semi-formal
+          </li>
+          <li>6 dapper colours.</li>
+          <br /><br />
+          <p>
+            Azure Blue Melange: Suave, stylish, pairs well with semi-formal and
+            casual wear.
+          </p>
+          <br /><br />
+          <h3>Shipping policy:</h3>
+          <br /><br />
+          <li>Free shipping on all orders.</li>
+          <li>
+            Delivery usually take 8-10 working days depending on your location:
+          </li>
+          <br /><br />
+          <h3>Exchanges and Returns Policy:</h3>
+          <br /><br />
+          <li>
+            Free exchanges and returns for 7 days from date of delivery for
+            unused shoes with tags intact.
+          </li>
+          <br /><br />
+          <p>Write to us at rescue@flatheads.in with your order ID</p>
+          <br />
+        </div>
+        <br /><br />
+
+        <div id="cr">
+          <h3>CUSTOMER REVIEWS</h3>
+          <p>Write a review</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer component  -->
+    <%- include("partials/bottomFooter.ejs") %>
+  </body>
+</html>
+<script src="scripts/Product page.js"></script>

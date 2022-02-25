@@ -1,0 +1,382 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+} */
+
+
+.nav{
+    border-bottom: 1px solid gainsboro;
+    height: 180px;
+    margin-bottom: 1%;
+   
+}
+.main{
+    /* padding: 2%; */
+   /* border-bottom: 1px solid green; */
+   margin-top: 50px;
+   min-height: 1000px;
+    width: 100%; 
+    
+}
+
+
+/* .footer{
+    background-color: transparent;
+    height: 500px;
+} */
+/* h1{
+    .footer {
+} */
+
+#continue{
+  background-color: rgb(255,255,255);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  text-align: center;
+  font-size: 100%;
+  margin-top: 1%;
+ 
+}
+#cart_head{
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    height: 30%;
+    /* margin: auto; */
+    text-align: center;
+   
+  
+    
+}
+#list{
+    display: flex;
+    
+    gap: 25%; 
+     list-style: none;
+    border: 1px solid transparent;
+    width: 29%;
+    margin-left: 70%;
+    margin-top: 7%;
+   
+}
+#list li:last-child{
+  margin-left: 19%;
+}
+#cart_section{
+    border: 1px solid transparent;
+    min-height: 250px;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: (repeat(1,1fr));
+    gap: 1%;
+
+}
+hr{
+   outline: gainsboro;
+}
+#cart_box{
+  border: 1px solid transparent;
+   height: 200px;
+   display: flex;
+   gap: 2%;
+   max-width: 99%;
+}
+#title_div{
+    background-color:white;
+    height: 65%;
+    margin-top: 3%;
+    width: 15%;
+}
+#size_para{
+    margin-top: 3%;
+    font-weight: bold;
+}
+#remove_btn{
+    width: 100px;
+    height: 19%;
+    margin-top: 11%;
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+#right_div{
+    border: 1px solid transparent;
+    width:40%;
+    margin-left: 600px;
+    height: 17%;
+    margin-top: 5%;
+    display: flex;
+    gap: 14%;
+    
+}
+#quantity{
+    border: 1px solid gainsboro;
+    width: 19%;
+    outline-color:1px solid black;
+     display: flex;
+     gap: 20%;
+    
+}
+#total_price{
+
+    border: 1px solid transparent;
+    width: 18%;
+}
+#add_div{
+  background-color: gray;
+    width: 100%;
+  height: 17%;
+  
+
+   
+    /* width: 26%;
+    font-size: 200%;
+    text-align: center;
+    color: brown;
+    border: none; */
+}
+
+#val_div{
+    background-color:transparent;
+    width: 42%;
+    text-align: center;
+    font-size: 130%;
+   padding: 4%;
+}
+#min_div{
+    background-color:gray;
+    /* width: 100%; */
+  
+    width: 100%;
+    height: 17%;
+   
+
+    /* text-align: center; */
+    /* font-size: 190%;
+    color: brown; */
+    /* border: none; */
+}
+#total{
+    border: 1px solid transparent;
+    width: 22%;
+    margin-left: 16%;
+}
+#changeDiv{
+  /* border: 1px solid blue; */
+    width: 25%;
+    height: 80px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 1%;
+    
+
+    
+}
+#up_img{
+   height: 100%;
+    width: 100%;
+}
+#down_img{
+   height: 100%;
+    width: 100%;
+}
+#price{
+    width: 30%;
+}
+#sub_total{
+    width: 30%;
+    height: 50px;
+    border: 1px solid transparent;
+    margin-left: 69%;
+    margin-top: 3%;
+    display: flex;
+    gap: 2%;
+}
+#show_sub{
+  border: 1px solid transparent;
+   height: 98%;
+   width: 30%;
+   margin-left: 50%;
+   
+   
+}
+
+svg {
+    background-color: black;
+}
+#payment_opt{
+    /* border: 1px solid blue; */
+    width: 28%;
+    height: 20px;
+    margin-left: 68%;
+    font-size: 80%;
+}
+#pay_image{
+border: 1px solid red;
+width: 28%;
+height: 160px;
+margin: auto;
+margin-left: 68%;
+border-radius: 2%;
+}
+#black{
+    background-color: rgb(36,36,36);
+    width: 95%;
+    height: 40%;
+    border-radius: 4px;
+   display: flex;
+    margin: auto;
+    margin-top: 2.5%;
+}
+#svg_img{
+  /* background-color: thistle; */
+    width: 9%;
+    height: 100%;
+
+    margin-left: 25%;
+}
+#sv_image{
+    margin: auto;
+    margin-top: 24%;
+    margin-left: 8%;
+    background-color: rgb(36,36,36);
+    width: 100%;
+    height: 80%;
+}
+#blaze{
+    width: 50%;
+    /* background-color: yellow; */
+    height: 40%;
+    letter-spacing: 0px;
+    margin-top: 1.5%;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-left: 2%;
+    
+}
+#subtext{
+    font-weight: 400;
+    font-size: 80%;
+    margin-bottom: 3%;
+    /* background-color: gold; */
+    margin-top: 1%;
+    height: 40%;
+    
+}
+#offer{
+    background-color: rgb(212,226,252);
+    border: 1px solid rebeccapurple;
+    width: 23%;
+    height: 20%;
+   border-radius: 5px;
+    margin-left:76%;
+    margin-top: -3%;
+    display: flex;
+    gap: 1%;
+    padding: 1%;
+}
+#offer_svg{
+    width: 18%;
+    height: 75%;
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: rgb(212,226,252);
+}
+#offer_text{
+    font-size: 60%;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color:#276ef1;
+    ;
+   
+}
+#payment_images{
+    /* border: 1px solid crimson; */
+    height: 24%;
+    width: 60%;
+    margin: auto;
+    
+    display: flex;
+    gap: 2%;
+
+}
+.o_pay{
+   
+    height: 100%;
+     /* background-color: darkcyan; */
+     width: 100%;
+     border-radius: 3px;
+     border: 1px solid gainsboro;
+   
+    
+}
+#img1{
+   background-color: white;
+   width: 90%;
+   height: 100%;
+}
+#img2{
+   
+   width: 100%;
+   height: 100%;
+   
+}
+#img3{
+   
+   width: 100%;
+   height: 100%;
+   
+}
+#img3{
+   
+   width: 90%;
+   height: 100%;
+   
+}
+#pay_img{
+    width: 29%;
+    height: 120px;
+    border: 1px solid gainsboro;
+    margin-left: 67%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+#links{
+    border: 1px solid transparent;
+    width: 32%;
+    height: 48px;
+    margin-top: 3%;
+  margin-left: 64%;
+  display: flex;
+  gap: 2%;
+}
+#update{
+    width: 42%;
+    height: 100%;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 3px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+#card{
+    width: 60%;
+    height: 100%;
+    gap: 2%;
+    background-color: rgb(253,211,0);
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+}
+#cont_shop{
+    margin-left: 84%;
+    width: 12%;
+    height: 43px;
+    margin-top: 1%;
+    margin-bottom: 7%;
+    background-color: white;
+    font-size: 90%;
+}

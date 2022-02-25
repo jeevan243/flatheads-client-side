@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/cart.css">
+      <link rel="stylesheet" href="../css/header.css">
+       <link rel="stylesheet" href="../css/bottomFooter.css">
+       <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+  <!-- <link rel="stylesheet" href="" class="css"> -->
+  
+<body>
+  <%- include("partials/header.ejs") %>
+      
+
+    </header>
+   
+    <div class="main">
+         <div id="cart_head"> 
+            <h1>CART</h1>
+        <button id="continue" onclick="cont()">Continue shopping</button>
+        <ul id="list">
+            <li>Price</li>
+           <li>Quantity</li>
+           <li>Total</li>
+       </ul>  
+        
+        </div>
+      <div id="cart_section"></div>
+        <div id="sub_total">
+         <div id="sub_text">SUBTOTAL</div>
+        <div id="show_sub"></div>
+        
+        </div>  
+        <div id="payment_opt">FREE shipping.Discount code can be applied on payment page.
+        
+        </div>  
+        <!-- <img src="https://lh3.googleusercontent.com/nRkUyXf_7zH9AgKYBlEMC1FcR2dh-uq1T9d17oQr4S4WOrn2rFlRsG5UwwM-MIRNlCU1vdymri5Rr4hh01GOoremwmJennA2IUlQOjE" id="pay_img"> -->
+         <div id="pay_img"> 
+         
+          <div id ="black">
+            <div id="svg_img">
+              <svg id="sv_image"width="28" height="28" fill="none"><path d="M19.648 4.107L13.664 11.5h4.834L6.123 24h9.127c4.492 0 7.37-2.354 7.907-5.527.479-2.95-1.338-4.766-3.603-4.854l.039-.195c2.129-.469 3.926-1.953 4.326-4.297.446-2.633-.953-4.595-4.29-5.034l.019.014z" fill="#fff"></path><path d="M17.59 4l-7.42 9.166h4.332L4.19 23.584 7.333 16.5H4L9 4h8.59z" fill="#fff"></path></svg>
+            </div>
+            <span id=blaze>
+              Buy now via UPI/COD
+              <div id="subtext">with Blaze Checkout</div>
+            </span>
+           
+          </div>
+          <div id="offer">
+            <svg id="offer_svg" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.205 0.29L9.705 4.79C9.885 4.97 10 5.225 10 5.5C10 5.775 9.89 6.025 9.705 6.205L6.205 9.705C6.025 9.89 5.775 10 5.5 10C5.225 10 4.975 9.89 4.795 9.71L0.295 5.21C0.11 5.025 0 4.775 0 4.5V1C0 0.45 0.45 0 1 0H4.5C4.775 0 5.025 0.11 5.205 0.29ZM3 2.25C3 2.66421 2.66421 3 2.25 3C1.83579 3 1.5 2.66421 1.5 2.25C1.5 1.83579 1.83579 1.5 2.25 1.5C2.66421 1.5 3 1.83579 3 2.25Z" fill="#276EF1"></path>
+              </svg>
+              <span id="offer_text">Extra 10% off</span>
+          </div>
+          <div id="payment_images">
+            <img id="img1" class="o_pay" src="https://vinron.in/wp-content/uploads/2021/07/Phone-pe-logo.png"></img>
+            <img id="img2" class="o_pay" src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnj2WQBtYJxf2MxumeLpnRIO8-buQl1o0U4HZtw4DnIe2Nj7B_TJJATNJl1TJUDxORa0&usqp=CAU"></img>
+            <img id="img3" class="o_pay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUh7IKT5_04TRrPO-t3-WiD14eWQhAWN-xA&usqp=CAU"></img>
+            <img id="img4" class="o_pay" src="data:image/png;base64,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"></img>
+          </img>
+        </div>
+       
+       </div>
+       <div id="links">
+         <button id="update" onclick="update()">UPDATE CART</button>
+         <button id="card" onclick="payment()">DEBIT/CREDIT CARD</button>
+       </div>
+       <button id="cont_shop" onclick="cont()">Continue Shopping</button>
+     
+    </div>
+  </div>
+  <%- include("partials/bottomFooter.ejs") %>
+</body>
+</html>
+<script src="scripts/cart.js">
+ </script>

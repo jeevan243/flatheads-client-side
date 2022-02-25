@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/bottomFooter.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <div id="main">
+      <div id="categories">
+        <div id="sizeChart">
+          <h4>SIZE FILTER (UK/IND)</h4>
+          <div id="item">
+            <input type="checkbox" id="6" />
+            <label for="6">6</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="7" />
+            <label for="7">7</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="8" />
+            <label for="8">8</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="9" />
+            <label for="9">9</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="10" />
+            <label for="10">10</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="11" />
+            <label for="11">11</label>
+          </div>
+          <div id="item">
+            <input type="checkbox" id="12" />
+            <label for="12"> 12</label>
+          </div>
+        </div>
+
+        <div id="styleChart">
+          <br /><br />
+          <h4>Style</h4>
+          <div id="item1">
+            <input type="checkbox" id="luft" />
+            <label for="luft">Luft (Super Lightweight)</label>
+          </div>
+          <div id="item1">
+            <input type="checkbox" id="drift" />
+            <label for="drift">Drift (Bamboo Sliders)</label>
+          </div>
+          <div id="item1">
+            <input type="checkbox" id="new_troos" />
+            <label for="new_troos">New Troos (Wfh Bamboo Loafers)</label>
+          </div>
+        </div>
+      </div>
+      <div id="container">
+        <div id="promo">
+          <p>
+            Get <b>Flat10%</b> on Flatheads <b>Footwear.</b> Use Code:
+            <b>FH10</b>
+          </p>
+        </div>
+        <div id="sort">
+          <div>
+            <p id="count">15 Products</p>
+          </div>
+          <div>
+            <select id="priceSort" onchange="handlePricesort()">
+              <option value="">Sort by Price</option>
+              <option value="low">Price, low to high</option>
+              <option value="high">Price, high to low</option>
+            </select>
+            <select id="nameSort" onchange="handleNamesort()">
+              <option value="">Sort by Name</option>
+              <option value="asc">Ascending</option>
+              <option value="dsc">Descending</option>
+            </select>
+          </div>
+        </div>
+        <div id="products"></div>
+      </div>
+    </div>
+    <!-- footer component  -->
+    <%- include("partials/bottomFooter.ejs") %>
+  </body>
+</html>
+
+<script src="scripts/products.js"></script>
