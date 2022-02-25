@@ -1,0 +1,110 @@
+.second-half {
+  margin-top: 2%;
+}
+
+/* service items content area  */
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  /* border: 1px solid black; */
+}
+
+/* service item individual div  */
+.service-item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 20%;
+}
+
+/* service content image  */
+.service-item > img {
+  width: 150px;
+}
+
+/* review section  */
+.new-reviews {
+  /* border: 1px solid rgb(175, 210, 245); */
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 2%;
+}
+
+.new-reviews .items {
+  width: 30%;
+}
+
+.items > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* new review button  */
+.new-reviews-button {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.review-btn > button {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+
+.review-btn > button:hover {
+  border-bottom: 2px solid black;
+}
+
+.new-reviews-heading,
+.press-item-heading,
+.reviews-feedback-heading {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: initial;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+/* press items section  */
+.press-item-sponsers {
+  width: 80%;
+  margin: auto;
+}
+.press-items {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  /* gap: 2%;  */
+}
+
+.press-items img {
+  width: 8%;
+}
+
+/* reviews and feedback */
+.star-icons {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
+.reviews-feedback {
+  text-align: center;
+  margin-bottom: 2%;
+}

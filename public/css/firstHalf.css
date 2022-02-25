@@ -1,0 +1,565 @@
+div.second_txt {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* css for 3rd  */
+
+.row .section-heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 115%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px !important;
+  margin-top: 90px;
+  /* margin-top: -30px; */
+}
+.div3 {
+  margin: 0px 100px;
+  align-items: center;
+  width: 85%;
+  /* max-width: 1420px; */
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 370px);
+  grid-gap: 0px;
+}
+.div3 > div {
+  /* max-width: 1420px; */
+  padding: 0px 50px;
+  align-items: center;
+  /* border: 1px solid yellowgreen; */
+  text-align: center;
+}
+
+.div3 h3 {
+  font-size: 16px;
+  margin: 5px;
+  font-weight: 600;
+}
+.div3 img {
+  /* width:100% ; */
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.item .btn {
+  margin: 50px 680px;
+  border-radius: 1px;
+  padding: 9px 29px;
+  background-color: rgb(253, 211, 0);
+  font-weight: bold;
+}
+
+/* above new 3rd Div */
+
+/* End css for 3rd  */
+
+/* css for 4th  */
+.div4 .bttn {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+
+.div4 {
+  margin: 100px 145px;
+  /* border: 2px solid yellow; */
+  align-items: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 550px 600px;
+  grid-template-rows: repeat(1, 520px);
+}
+/* End css for 4th  */
+
+/* css for 5th  */
+.div5 {
+  padding-top: 0px;
+}
+
+.div5 .items {
+  max-width: 1420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.div5 .item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.div5 .item {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.div5 .item img {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.div5 .item a {
+  text-decoration: none;
+  border: none;
+  border-bottom: none !important;
+}
+
+.div5 .item a:after {
+  border-bottom: none !important;
+  content: none !important;
+  transition: none !important;
+}
+
+.div5 .item button {
+  margin-top: 75%;
+}
+
+.div5 .item .feature-desc {
+  font-size: 16px;
+  text-align: left;
+}
+
+.div5 .item .item-heading {
+  font-size: 20px;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.div5 .section-heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 115%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px !important;
+  margin-top: -30px;
+}
+
+@media (min-width: 769px) {
+  .div5 {
+    margin-top: 30px;
+  }
+
+  .div5 .item {
+    width: 24%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .div5 {
+    padding-bottom: 0px;
+  }
+
+  .div5 .item {
+    width: 32%;
+  }
+
+  .div5 .section-heading {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+
+  .div5 .item .feature-desc {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .div5 .item .item-heading {
+    font-size: 12px;
+    margin: 5px;
+    font-weight: 600;
+  }
+}
+
+/* End css for 5th  */
+
+/* css for 6th  */
+.div6 {
+  display: grid;
+  padding: 0 8%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  margin: auto;
+  grid-gap: 10px;
+}
+.div6 .luft_div {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.div6 .luft_div > a {
+  text-decoration: none;
+}
+/* End css for 6th  */
+
+/*  css for 7th  */
+.div7 {
+  width: 80%;
+  /* border: 1px solid red; */
+  align-items: center;
+  margin: auto;
+  /* padding: 8%; */
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  grid-template-rows: repeat(1, 470px);
+  grid-gap: 290px;
+}
+
+/* .div7 > div{
+      border: 1px solid yellow;
+  } */
+.div7 .bttn {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+/* End css for 7th  */
+
+/*  css for 8th  */
+.div8 {
+  margin: 0px 100px;
+  margin-top: 100px;
+  align-items: center;
+  width: 85%;
+  /* border: 1px solid green; */
+  /* padding: 8%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 370px);
+  grid-gap: 0px;
+}
+.div8 > div {
+  padding: 0px 50px;
+  align-items: center;
+  /* border: 1px solid yellowgreen; */
+  text-align: center;
+}
+
+/* End css for 8th  */
+
+/*  css for 9th  */
+.div9 {
+  /* margin-bottom: 80px; */
+  /* border: 1px solid red; */
+  padding: 0 8%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 500px);
+  grid-gap: 10px;
+}
+
+.div9 .drift_div > a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.div9 .visually-hidden {
+  display: block;
+}
+/* End css for 9th  */
+
+/*  css for 10th  */
+.div10 {
+  margin: 0px 145px;
+  /* border: 2px solid yellow; */
+  align-items: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 550px 600px;
+  /* grid-template-columns: repeat(2,1fr); */
+  grid-template-rows: repeat(1, 520px);
+}
+
+.div10 > div {
+  border: 0px solid red;
+}
+.div10 .btn {
+  padding: 10px 50px;
+  /* background-color: yellow; */
+}
+/* End css for 10th  */
+
+/*  css for 11th  */
+.div11 {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 370px);
+  grid-gap: 0px;
+}
+
+.div11 > div {
+  /* border: 1px solid black; */
+  text-align: center;
+}
+/* End css for 11th  */
+
+/*  css for 12th  */
+.div12 {
+  display: grid;
+  /* border: 1px solid red; */
+  padding: 0 8%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-gap: 10px;
+}
+.div12 .luft_div {
+  text-align: center;
+}
+.div12 .luft_div > a {
+  text-decoration: none;
+}
+/* End css for 12th  */
+
+/*  css for 13th  */
+.div13 {
+  width: 80%;
+  /* border: 1px solid red; */
+  align-items: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  grid-template-rows: repeat(1, 470px);
+  grid-gap: 290px;
+}
+
+.div13 > div {
+  border: 0px solid yellow;
+}
+.bttn {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+/* End css for 13th  */
+
+/*  css for 14th  */
+.div14 {
+  margin: 0px 140px;
+  width: 80%;
+  align-items: center;
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 370px);
+  grid-gap: 0px;
+}
+
+.div14 > div {
+  border: 0px solid black;
+  text-align: center;
+}
+/* End css for 14th  */
+
+/*  css for 15th  */
+.div15 {
+  margin: auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-gap: 10px;
+}
+.div15 .luft_div {
+  text-align: center;
+}
+.div15 .luft_div > a {
+  text-decoration: none;
+}
+/* End css for 15th  */
+
+/*  css for 16th  */
+/* End css for 16th  */
+
+/*  css for 17th  */
+.div17 {
+  margin: auto;
+  /* padding: 0 8%; */
+  align-items: center;
+  width: 85%;
+  border: 0px solid green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 370px);
+  grid-gap: 0px;
+}
+.div17 > div {
+  padding: 0px 50px;
+  align-items: center;
+  border: 0px solid yellowgreen;
+  text-align: center;
+}
+/* End css for 17th  */
+
+/*  css for 18th  */
+
+.div18 {
+  margin: auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  grid-gap: 10px;
+}
+.div18 .luft_div {
+  text-align: center;
+}
+.div18 .luft_div > a {
+  text-decoration: none;
+}
+/* End css for 18th  */
+
+.strike {
+  text-decoration: line-through;
+}
+
+.grid-product__price--savings {
+  color: tomato;
+}
+.grid-product__link {
+  color: darkslategray;
+}
+
+.rte featured-row__subtext {
+  line-height: 28.16px;
+  font-size: 17.6px;
+  letter-spacing: normal;
+}
+
+.div7 .h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.div10 h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.div10 .btn {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+
+.div13 .h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.div13 p {
+  letter-spacing: normal;
+}
+
+.the {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75em;
+  margin-bottom: 20px;
+}
+
+.div4 .h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  margin-left: 12%;
+}
+
+.btn-view {
+  line-height: 1.42;
+  text-decoration: none;
+  white-space: normal;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 11px 20px;
+  min-width: 90px;
+  cursor: pointer;
+  border: none;
+  background-color: #fdd301;
+  margin-bottom: 2%;
+  transition: border-bottom 0.3 ease;
+}
+
+.header {
+  /* border: 1px solid black; */
+  position: sticky;
+  scroll-behavior: smooth;
+  width: 100%;
+  /* margin-bottom: 2%; */
+}
+.item {
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.grid-product__image {
+  height: 350px;
+  width: 350px;
+}

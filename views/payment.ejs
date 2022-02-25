@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      #paytm_icon {
+        display: block;
+        margin: 0 auto;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        /* flex: 1; */
+        /* border: 1px solid black; */
+        gap: 5%;
+      }
+      .img_svg {
+        width: 50%;
+        /* border: 1px solid blanchedalmond; */
+        padding: 4%;
+      }
+      .img_svg > img {
+        width: 100%;
+      }
+      .user_form {
+        width: 50%;
+      }
+    </style>
+    <title>💰Paytm Page</title>
+  </head>
+  <body style="background-color: #1ac8cee5">
+    <img
+      id="paytm_icon"
+      src="https://seeklogo.com/images/P/paytm-logo-EC097E9287-seeklogo.com.png"
+      alt="paytm_icon"
+    />
+    <div class="container">
+      <div class="user_form">
+        <!-- row my-5 -->
+        <!-- col-md-4 offset-md-6 -->
+        <div class="">
+          <div class="card">
+            <div class="card-body">
+              <form class="" action="/paynow" method="post">
+                <div class="form-group">
+                  <label for="">Name: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="name"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Email: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Phone: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="phone"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Amount: </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="amount"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <button class="btn form-control btn-primary">Pay Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img_svg">
+        <img
+          class="paytm_svg"
+          src="https://www.paytmmoney.com/static/images/global-landing-page/invest-options/nps.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../scripts/payment.js"></script>
