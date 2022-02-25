@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 div.second_txt {
   margin-top: 80px;
   text-align: center;
@@ -6,52 +12,85 @@ div.second_txt {
 /* css for 3rd  */
 
 .row .section-heading {
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 115%;
+  /* line-height: 115%; */
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 10px !important;
-  margin-top: 90px;
-  /* margin-top: -30px; */
+  margin: 40px auto;
 }
-.div3 {
-  margin: 0px 100px;
-  align-items: center;
-  width: 85%;
+.div3,
+.div5,
+.div8,
+.div11,
+.div14,
+.div17 {
+  margin: 10px auto;
+  /* align-items: center; */
+  width: 80%;
   /* max-width: 1420px; */
   /* border: 1px solid green; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 370px);
+  grid-template-rows: repeat(1, 300px);
   grid-gap: 0px;
 }
-.div3 > div {
-  /* max-width: 1420px; */
-  padding: 0px 50px;
+
+.div3 > div,
+.div5 > div,
+.div8 > div,
+.div11 > div,
+.div14 > div,
+.div17 > div {
   align-items: center;
   /* border: 1px solid yellowgreen; */
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
 }
 
-.div3 h3 {
-  font-size: 16px;
-  margin: 5px;
+.div3 h3,
+.div5 h3,
+.div8 h3,
+.div11 h3,
+.div14 h3,
+.div17 h3 {
+  font-size: 1rem;
   font-weight: 600;
 }
-.div3 img {
-  /* width:100% ; */
-  padding: 10px;
-  background: #fff;
+.div3 img,
+.div5 img,
+.div8 img,
+.div11 img,
+.div14 img,
+.div17 img {
+  max-width: 220px;
+  margin: 0 auto;
+  /* background: #fff; */
   border-radius: 50%;
 }
 
+@media screen and (max-width: 480px) {
+  .div3,
+  .div5,
+  .div8,
+  .div11,
+  .div14,
+  .div17 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* gap: 3%; */
+    margin: auto;
+  }
+}
+
 .item .btn {
-  margin: 50px 680px;
+  margin: 50px auto;
   border-radius: 1px;
   padding: 9px 29px;
   background-color: rgb(253, 211, 0);
   font-weight: bold;
+  /* border: 1px solid teal; */
 }
 
 /* above new 3rd Div */
@@ -59,31 +98,47 @@ div.second_txt {
 /* End css for 3rd  */
 
 /* css for 4th  */
-.div4 .bttn {
+.div4 .bttn,
+.div10 .bttn {
   line-height: 1.42;
   text-decoration: none;
   white-space: normal;
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  padding: 11px 20px;
+  padding: 10px 20px;
   min-width: 90px;
   cursor: pointer;
   border: none;
   background-color: #fdd301;
-  margin-bottom: 2%;
+  margin-bottom: 2% auto;
   transition: border-bottom 0.3 ease;
 }
 
-.div4 {
-  margin: 100px 145px;
+.div4,
+.div7,
+.div13,
+.div10 {
+  margin: 10% auto;
   /* border: 2px solid yellow; */
   align-items: center;
+  /* height: 20vw; */
   width: 80%;
   display: grid;
-  grid-template-columns: 550px 600px;
-  grid-template-rows: repeat(1, 520px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 500px);
+}
+
+@media screen and (max-width: 480px) {
+  .div4,
+  .div7,
+  .div13,
+  .div10 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+  }
 }
 /* End css for 4th  */
 
@@ -115,6 +170,7 @@ div.second_txt {
 .div5 .item img {
   max-width: 260px;
   margin: 0 auto;
+  /* background-color: aqua; */
 }
 
 .div5 .item a {
@@ -195,8 +251,9 @@ div.second_txt {
 
 /* css for 6th  */
 .div6 {
+  /* border: 1px solid black; */
+  width: 80%;
   display: grid;
-  padding: 0 8%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 500px);
   margin: auto;
@@ -209,19 +266,19 @@ div.second_txt {
 .div6 .luft_div > a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 480px) {
+  .div6 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* gap: 3%; */
+    margin: 3% auto;
+  }
+}
 /* End css for 6th  */
 
-/*  css for 7th  */
-.div7 {
-  width: 80%;
-  /* border: 1px solid red; */
-  align-items: center;
-  margin: auto;
-  /* padding: 8%; */
-  display: grid;
-  grid-template-columns: repeat(2, 450px);
-  grid-template-rows: repeat(1, 470px);
-  grid-gap: 290px;
+.div7_text {
+  margin-right: 10%;
 }
 
 /* .div7 > div{
@@ -244,39 +301,14 @@ div.second_txt {
   transition: border-bottom 0.3 ease;
 }
 /* End css for 7th  */
-
-/*  css for 8th  */
-.div8 {
-  margin: 0px 100px;
-  margin-top: 100px;
-  align-items: center;
-  width: 85%;
-  /* border: 1px solid green; */
-  /* padding: 8%; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 370px);
-  grid-gap: 0px;
-}
-.div8 > div {
-  padding: 0px 50px;
-  align-items: center;
-  /* border: 1px solid yellowgreen; */
-  text-align: center;
-}
-
-/* End css for 8th  */
-
 /*  css for 9th  */
 .div9 {
-  /* margin-bottom: 80px; */
-  /* border: 1px solid red; */
-  padding: 0 8%;
+  width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 500px);
-  grid-gap: 10px;
+  grid-template-rows: repeat(1, 400px);
+  /* grid-gap: 10px; */
 }
 
 .div9 .drift_div > a {
@@ -287,55 +319,28 @@ div.second_txt {
 .div9 .visually-hidden {
   display: block;
 }
+
+@media screen and (max-width: 480px) {
+  .div9 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* gap: 3%; */
+    margin: 3% auto;
+  }
+}
 /* End css for 9th  */
 
-/*  css for 10th  */
-.div10 {
-  margin: 0px 145px;
-  /* border: 2px solid yellow; */
-  align-items: center;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 550px 600px;
-  /* grid-template-columns: repeat(2,1fr); */
-  grid-template-rows: repeat(1, 520px);
-}
-
-.div10 > div {
-  border: 0px solid red;
-}
-.div10 .btn {
-  padding: 10px 50px;
-  /* background-color: yellow; */
-}
 /* End css for 10th  */
-
-/*  css for 11th  */
-.div11 {
-  margin: auto;
-  width: 80%;
-  align-items: center;
-  /* border: 1px solid red; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 370px);
-  grid-gap: 0px;
-}
-
-.div11 > div {
-  /* border: 1px solid black; */
-  text-align: center;
-}
-/* End css for 11th  */
 
 /*  css for 12th  */
 .div12 {
+  margin: auto;
   display: grid;
-  /* border: 1px solid red; */
-  padding: 0 8%;
+  width: 80%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 500px);
   grid-gap: 10px;
+  /* border: 1px solid black; */
 }
 .div12 .luft_div {
   text-align: center;
@@ -343,23 +348,15 @@ div.second_txt {
 .div12 .luft_div > a {
   text-decoration: none;
 }
-/* End css for 12th  */
 
-/*  css for 13th  */
-.div13 {
-  width: 80%;
-  /* border: 1px solid red; */
-  align-items: center;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 450px);
-  grid-template-rows: repeat(1, 470px);
-  grid-gap: 290px;
+@media screen and (max-width: 480px) {
+  .div12 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 3% auto;
+  }
 }
 
-.div13 > div {
-  border: 0px solid yellow;
-}
 .bttn {
   line-height: 1.42;
   text-decoration: none;
@@ -378,69 +375,36 @@ div.second_txt {
 }
 /* End css for 13th  */
 
-/*  css for 14th  */
-.div14 {
-  margin: 0px 140px;
-  width: 80%;
-  align-items: center;
-  border: 0px solid red;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 370px);
-  grid-gap: 0px;
-}
-
-.div14 > div {
-  border: 0px solid black;
-  text-align: center;
-}
-/* End css for 14th  */
-
 /*  css for 15th  */
 .div15 {
+  width: 80%;
   margin: auto;
-  padding: 0 8%;
+  /* padding: 0 8%; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 500px);
   grid-gap: 10px;
 }
+
 .div15 .luft_div {
   text-align: center;
 }
 .div15 .luft_div > a {
   text-decoration: none;
 }
-/* End css for 15th  */
 
-/*  css for 16th  */
-/* End css for 16th  */
-
-/*  css for 17th  */
-.div17 {
-  margin: auto;
-  /* padding: 0 8%; */
-  align-items: center;
-  width: 85%;
-  border: 0px solid green;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 370px);
-  grid-gap: 0px;
+@media screen and (max-width: 480px) {
+  .div15 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 1% auto;
+  }
 }
-.div17 > div {
-  padding: 0px 50px;
-  align-items: center;
-  border: 0px solid yellowgreen;
-  text-align: center;
-}
-/* End css for 17th  */
-
-/*  css for 18th  */
 
 .div18 {
+  width: 80%;
   margin: auto;
-  padding: 0 8%;
+  /* padding: 0 8%; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 500px);
@@ -451,6 +415,14 @@ div.second_txt {
 }
 .div18 .luft_div > a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .div18 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 3% auto;
+  }
 }
 /* End css for 18th  */
 
@@ -476,28 +448,6 @@ div.second_txt {
   font-size: 20px;
 }
 
-.div10 h2 {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.div10 .btn {
-  line-height: 1.42;
-  text-decoration: none;
-  white-space: normal;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  padding: 11px 20px;
-  min-width: 90px;
-  cursor: pointer;
-  border: none;
-  background-color: #fdd301;
-  margin-bottom: 2%;
-  transition: border-bottom 0.3 ease;
-}
-
 .div13 .h3 {
   font-weight: bold;
   font-size: 20px;
@@ -518,12 +468,26 @@ div.second_txt {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.3em;
-  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
+.div4_img,
+.div7_img,
+.div13_img,
+.div10_img {
+  /* background-color: black; */
+  /* width: 100%; */
+  height: 100%;
+}
+
+.div4_img > a,
+.div10_img > a {
+  height: 100%;
+}
 .text-content {
   margin-left: 12%;
+  /* background-color: crimson; */
 }
 
 .btn-view {
@@ -539,7 +503,7 @@ div.second_txt {
   cursor: pointer;
   border: none;
   background-color: #fdd301;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   transition: border-bottom 0.3 ease;
 }
 

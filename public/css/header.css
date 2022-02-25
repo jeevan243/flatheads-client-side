@@ -37,7 +37,7 @@
 }
 
 .top-header > .side-icons {
-  margin-right:  12%;
+  margin-right: 12%;
   margin-left: 10%;
 }
 
@@ -70,6 +70,19 @@
   /* border: 1px solid teal; */
   justify-content: center;
 }
+
+@media screen and (max-width: 480px) {
+  .menu-items {
+    flex-direction: column;
+  }
+  .dropdown:hover .dropdown-menu {
+    border: 1px solid dodgerblue;
+    left: 0;
+    align-items: center;
+    margin: auto;
+    /* max-width: 50%; */
+  }
+}
 .list-header a {
   text-decoration: none;
   list-style: none;
@@ -77,6 +90,7 @@
 }
 .list-header ul {
   list-style: none;
+  /* border: 1px solid tomato; */
 }
 .menu-items li {
   padding: 0.5rem 1rem;
@@ -90,11 +104,13 @@
 /* dropdown */
 .dropdown {
   position: relative;
+  /* border: 1px solid tomato; */
 }
 .dropdown:hover a {
   color: #333333;
   font-size: 1rem;
   line-height: 26px;
+  /* border: 1px solid tomato; */
 }
 .dropdown-menu {
   position: absolute;
@@ -106,7 +122,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  /* border: 1px solid dodgerblue; */
+  border: 1px solid rgb(52, 149, 247);
 }
 
 .discount-off {
@@ -124,6 +140,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease;
 }
 .dropdown-menu li {
   display: block;
@@ -143,7 +160,7 @@
 }
 .mega-menu .content {
   position: relative;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 22px;
   font-weight: 500;
   top: 70px;
@@ -157,6 +174,7 @@
   width: 90%;
   margin: 0 auto;
   justify-content: space-between;
+  /* background-color: brown; */
 }
 
 .content .col {
@@ -169,6 +187,7 @@
   top: 86px;
   opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease-in-out;
 }
 .img-wrapper {
   /* width: 210px; */
@@ -185,32 +204,37 @@
 }
 
 h2 {
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 h5 {
-  font-size: 14px;
+  font-size: 1rem;
 
   font-weight: 500;
   /* font-size: 1rem; */
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.menu-item {
+  margin: auto;
 }
 
 .users {
   justify-content: space-between;
 }
 
-.users> i{
+.users > i {
   font-weight: normal;
   font-size: 1.3rem;
 }
 
-.side-icons i{
+.side-icons i {
   font-size: 1.3rem;
 }
 /* https://cdn.shopify.com/s/files/1/0258/2485/4100/collections/Collection2_400x.jpg?v=1631079294 */

@@ -4,23 +4,38 @@
 
 /* service items content area  */
 .service-items {
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 4%;
   /* border: 1px solid black; */
+  /* gap: 5%; */
 }
 
 /* service item individual div  */
 .service-item {
   display: flex;
   flex-direction: column;
+  gap: 3%;
   /* align-items: center; */
   width: 20%;
 }
 
 /* service content image  */
 .service-item > img {
-  width: 150px;
+  width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  .service-items {
+    flex-direction: column;
+    margin: auto;
+    /* border: 1px solid black; */
+  }
+  .service-item {
+    /* border: 1px solid teal; */
+    width: 100%;
+  }
 }
 
 /* review section  */
