@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    border: 1px solid transparent;
+    height: 180px;
+    margin-bottom: 2%;
+   
+}
+
+.main{
+    padding: 5%;
+  
+    height: 900px;
+}
+#form{
+    
+   
+    height:100%;
+    width: 32%;
+   margin:auto ;
+   margin-top: 2%;
+    /* padding:1%;
+     */
+}
+input{
+    width: 100%;
+    height: 6%;
+    margin-top: 2.5%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+   
+  
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(51,51,51);
+    font-size: 210%;
+ }
+ hr{
+    color: lightgray;
+    width: 100%;
+  }
+  label{
+    font-size: 100%;
+    letter-spacing: 2px;
+}
+#create{
+    background-color: rgb(253,211,0);
+    letter-spacing: 4px;
+    border-radius: 5px;
+    /* outline: 1px solid black; */
+    width: 100%;
+    height: 6%;
+    outline-color: white;
+    font-weight: bolder;
+    /* padding: 2%; */
+}
