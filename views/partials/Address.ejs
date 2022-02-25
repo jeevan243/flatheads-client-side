@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+
+    <link rel="stylesheet" href="../css/Address.css">
+</head>
+<body>
+    
+<div id="container">
+
+
+    
+
+    <div id="left_address_box">
+
+
+
+        <div id="flathadslogo"> <a href="../landing/index.html"> <img src="../images/flatsheads_logo.png" alt=""></a>
+        
+            <div id="c_i_s_p">
+
+                <div class="cart"> <a href="../signin/cart.html">  Cart »</a></div>
+                <div class="information"> <a href="../landing/index.html">Information »</a></div>
+                <div class="shipping"> <a href="../Payment/card.html">Shipping »</a></div>
+                <div class="payment"> <a href="../Payment/card.html"> Payment </a> </div>
+
+            </div>
+        </div>                                                             <!--end logo div-->
+
+
+
+
+        <form class="addressform">
+
+
+            <label for="contactinfomation" id="con_in">Contact information</label>
+            <label for="Alredy" id="Alredy_account">Already have an account?  <a href="../signin/login.html">Log in</a></label><br><br>
+
+
+            <input type="email" id="email" placeholder="Email">
+            <span id="emailid" class="error"></span><br><br>
+            <input type="checkbox" id="checkbox" required> Email me with news and offer  </input><br><br>
+
+
+
+            <label for="shipping" id="shipping">Shipping address</label><br><br>
+
+
+
+            <select name="choice" id="select">
+                
+                <option value="second" selected>Country/Region</option>
+                <option value="third">India</option>
+              </select><br><br>
+              
+              
+
+              <input type="text" id="firstname" placeholder="First name" autocomplete="off">
+            
+
+              <input type="text" id="lastname" placeholder="Last name" autocomplete="off">
+              <span id="firstnamediv" class="error"></span><br><br>
+
+
+
+
+              <input type="text" id="address" placeholder="Address" autocomplete="off">
+              <span id="youraddress" class="error"></span><br><br>
+              
+  
+
+              <input type="text" id="apprartment" placeholder="Appartment,suite,etc.(optional)"><br><br>
+
+
+              <input type="text" name="" id="city" autocomplete="off"   placeholder="City" required>
+
+              <select name="choice" id="select_state">
+                  <option value="state" selected>State</option>
+                  <option value="Andrapradesh">Andhra Pradesh</option>
+                  <option value="third">Assam</option>
+                  <option value="third">Bihar</option>
+                  <option value="third">Chandigarh</option>
+                  <option value="third">Chattishgarh</option>
+                  <option value="third">Delhi</option>
+                  <option value="third">Goa</option>
+                  <option value="third">Gujrat</option>
+                  <option value="third">Harayana</option>
+                  <option value="third">Himachal Pradesh</option>
+                  <option value="third">Jammu and Kashmir</option>
+                  <option value="third">Jharkhand</option>
+                  <option value="third">Karnataka</option>
+                  <option value="third">Kerla</option>
+                  <option value="third">Madhya Pradesh</option>
+                  <option value="third">Maharashtra</option>
+                  <option value="third">Odisha</option>
+                  <option value="third">Nagaland</option>
+                  <option value="third">Punjab</option>
+                  <option value="third">Rajasthan</option>
+                  <option value="third">Sikkim</option>
+                  <option value="third">Tamil Nadu</option>
+                  <option value="third">Tripura</option>
+                  <option value="third">Uttar Pradesh</option>
+                  <option value="third">Uttarakhand </option>
+                  <option value="third">West Bengal</option>  
+              </select>
+
+
+
+              <input type="text"  id="pincode" placeholder="PIN code" autocomplete="off">
+             <!--- <span id="citydiv" class="error"></span><br>   -->
+              <span id="pincodediv" class="error"></span><br><br>
+
+            
+                
+
+              <div id="phone_ques">
+                <input type="number" name="" id="phone" placeholder="Phone" autocomplete="off">
+                <div id="quesmark">?</div>
+              </div>
+              <span id="phonediv" class="error"></span><br><br>
+              
+
+          
+              <input type="checkbox" id="saveinform" required> Save this information for next time  </input><br><br>
+
+
+              <div id="btn_return">
+
+                <input type="submit" name="Continue" id="submit" value="Continue to shipping" >
+
+
+               <div id="returntocart"> <a href="../signin/cart.html">Return to cart</a>   </div>
+              </div>
+              
+
+              
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+    <div id="divider"> </div>      <!--divider-->
+
+
+   
+    <!--righthandbox-->
+    <div id="right_address_box">
+        <ul id="list">
+            <li>Price</li>
+           <li>Quantity</li>
+           <li>Total</li>
+       </ul>  
+
+      
+        <div id="cart_section"></div>
+        <!-- <div id="sub_total"> </div>
+         <div id="sub_text">SUBTOTAL</div> -->
+        <div id="show_sub"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<script src="../js/Address.js">
+
+
+
+</script>

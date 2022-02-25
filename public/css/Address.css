@@ -1,0 +1,318 @@
+#container {
+    display: flex;
+    height: 900px;
+    width: 87%;
+    margin: auto;
+    /*   border: 2px solid red;       */
+  }
+  
+  #divider {
+    height: 900px;
+    /* width: 1px;   */
+    border: 1px solid grey;
+    background-color: grey;
+    margin-left: 30px;
+  }
+  
+  #left_address_box {
+    height: 900px;
+    width: 53%;
+    /* border: 1px solid blue;        */
+    background-color: white;
+  }
+  
+  #right_address_box {
+    margin-top: 55px;
+    margin-left: 4%;
+    height: 600px;
+    width: 45%;
+    border: 1px solid purple;
+  }
+  
+  #flathadslogo {
+    height: 160px;
+    width: 400px;
+    /*  border:  2px solid red;   */
+  }
+  
+  #flathadslogo img {
+    width: 350px;
+    margin-top: -35px;
+  }
+  
+  #c_i_s_p {
+    display: flex;
+    margin-top: -50px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .information,
+  .shipping,
+  .payment {
+    margin-left: 10px;
+  }
+  
+  #Alredy_account {
+    margin-left: 190px;
+    color: grey;
+    font-size: 16px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  #email,
+  #address,
+  #apprartment {
+    width: 560px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  #checkbox {
+    font-size: 40px;
+  }
+  
+  #select {
+    width: 560px;
+    height: 43px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  #firstname {
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  #lastname {
+    width: 45%;
+    margin-left: 4%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  #city {
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  #select_state {
+    width: 30%;
+    height: 40px;
+    margin-left: 1%;
+    border-radius: 5px;
+  }
+  
+  #pincode {
+    width: 32%;
+    height: 40px;
+    margin-left: 1%;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  #pincode:invalid {
+    border: 2px dashed coral;
+  }
+  
+  option {
+    width: 350px;
+    font-size: 19px;
+  }
+  
+  #phone_ques {
+    display: flex;
+  }
+  #phone {
+    height: 40px;
+    width: 520px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  
+  #quesmark {
+    height: 40px;
+    width: 40px;
+    border: 1px solid grey;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #quesmark:hover {
+    display: show;
+  }
+  
+  #submit,
+  #checkbtn {
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  #submit,
+  #checkbtn:hover {
+    background-color: rgba(0, 0, 0, 0.822);
+    cursor: pointer;
+  }
+  
+  #btn_return {
+    display: flex;
+  }
+  
+  #returntocart {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .error {
+    color: coral;
+  }
+  
+  /* shipping page css */
+  
+  #shippingdiv {
+    margin-top: 30px;
+    height: 100px;
+    width: 580px;
+    /*  border: 2px solid red;        */
+  }
+  
+  #shippingmethod {
+    font-size: 20px;
+  }
+  
+  #boxship {
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    width: 580px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+  
+  #circle {
+    margin-top: 10px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  #freeship {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: grey;
+  }
+  
+  #free {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 350px;
+  }
+  
+  #inputmaindiv {
+    height: 120px;
+    width: 580px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  }
+  
+  #istbox {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    /* border: 2px solid blue;     */
+    height: 35px;
+  }
+  
+  #emailcheck,
+  #addresscheck {
+    margin-left: 20px;
+    width: 400px;
+    border: none;
+    text-align: center;
+  }
+  
+  #change {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  
+  #contact {
+    margin-top: 5px;
+  }
+  
+  #dividerii {
+    height: 1px;
+    width: 540px;
+    border: 1px solid grey;
+    background-color: grey;
+    margin: auto;
+  }
+  #changeDiv {
+    /* border: 1px solid blue; */
+    width: 25%;
+    height: 80px;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1%;
+  }
+  #right_address_box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 2px;
+   margin-top: 10%;
+  }
+  #cart_box {
+    display: flex;
+  
+    justify-content: space-around;
+  }
+  #list {
+    display: flex;
+    /* border: 1px solid teal; */
+    justify-content: end;
+    list-style-type: none;
+    gap: 50px;
+    margin-right: 25px;
+  }
+  #cart_section {
+    /* border: 1px solid red; */
+    width: 600px;
+    
+  }
+  #cart_section > div {
+    display: flex;
+    /* border: 1px solid teal; */
+  }
+  #right_div {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+    width: 250px;
+  }
+  

@@ -1,0 +1,156 @@
+#container{
+    display: flex;
+    height: 900px;
+    width: 87%;
+    margin: auto;
+ /*   border: 2px solid red;       */ 
+}
+
+
+#left_address_box{
+
+    height: 900px;
+    width: 53%;
+ /*  border: 1px solid blue;         */ 
+    background-color: white;
+
+    
+}
+
+
+#flathadslogo{
+
+    height: 160px;
+    width: 400px;
+ /*   border:  2px solid red;     */
+}
+
+
+#flathadslogo img{
+
+    width: 350px;
+    margin-top: -35px;
+}
+
+
+#c_i_s_p{
+    display: flex;
+    margin-top: -50px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#inputmaindiv{
+    height: 150px;
+    width: 580px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+#istbox{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+   /* border: 2px solid blue;     */
+    height: 35px;
+}
+
+#emailcheck,#addresscheck{
+
+    margin-left: 20px;
+    width: 400px;
+    border: none;
+    text-align: center;
+
+}
+
+#change{
+   
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+
+#contact{
+    margin-top: 5px;
+}
+
+
+#dividerii{
+
+    height: 1px;
+    width: 540px;
+    border: 1px solid grey;
+    background-color: grey;
+    margin: auto;
+}
+
+
+
+#divider{
+    height:900px ;
+    width: 1px;   
+    border: 1px solid grey;
+    background-color: grey;   
+    margin-left: 30px;
+}
+
+
+
+#freeshipbox{
+    display: flex;
+  /* border: 2px solid blue;      */
+    height: 30px;
+    font-size: 16px;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#method{
+    margin-left: 10px;
+}
+/* 
+#freeshiping{
+    margin-left: 125px;
+} */
+
+
+#imgdiv{
+    width: 580px;
+    border: 2px solid grey;
+    height:310px;
+}
+
+
+#imgdiv img{
+    height: 310px;
+    width: 580px;
+}
+
+#btn_ret{
+    display: flex;
+    margin-top: 30px;
+}
+
+
+#com_btn{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+
+#return_heading{
+    margin-left: 20px;
+}
