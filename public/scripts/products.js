@@ -1,10 +1,12 @@
 let products1 = document.getElementById("products");
 
+var arr;
+
 async function callProudcts() {
   try {
     let responce = await fetch("https://flatheads.herokuapp.com/products");
     let products = await responce.json();
-    let arr = products.Product;
+    arr = products.Product;
     console.log("arr", arr);
     displayProducts(arr);
   } catch (error) {
