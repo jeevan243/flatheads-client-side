@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up</title>
     <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="css/header.css" />
    <!-- <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/bottomFooter.css">  -->
     <script
@@ -14,11 +15,11 @@
     ></script>
   </head>
   <body>
-    <div class="header"></div>
+    <%- include("partials/header.ejs") %>
 
     <div class="main">
       <h1>CREATE ACCOUNT</h1>
-      <form id="form" action="http://localhost:4888/login" method="POST">
+      <form id="form" action="/login" method="POST">
         <label for="first_name"> FIRST NAME</label><br />
 
         <input id="name" type="text" value="" name="first_name" /><br />

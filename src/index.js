@@ -1,9 +1,18 @@
 const express = require("express");
 const connect = require("./config/db");
+const app = express();
+app.use(express.json());
 require("dotenv").config();
-const { register, signin } = require("./controllers/auth.controller");
+
 const passport = require("./config/google_oauth");
+
 const productsContrller = require("./controllers/product.controller");
+
+app.use(express.urlencoded({
+  extended: true
+}))
+
+const { register, signin } = require("./controllers/auth.controller");
 var port = process.env.PORT || 1234;
 
 const https = require("https");
@@ -16,10 +25,10 @@ const parseJson = express.json({ extended: false });
 const checksum_lib = require("./paytm/checksum");
 const config = require("./paytm/config");
 
-const app = express();
-app.use(express.json());
 
-app.use("/login", userController);
+
+
+
 
 app.get("/register", async (req, res) => {
   return res.render("register.ejs");
@@ -27,8 +36,8 @@ app.get("/register", async (req, res) => {
 app.use("/products", productsContrller);
 
 app.post("/login", register);
-app.post("/homepage", signin);
-
+app.post("/home", signin);
+app.use("/login", userController);
 app.use(express.static("public"));
 
 // app.set("views", "views");

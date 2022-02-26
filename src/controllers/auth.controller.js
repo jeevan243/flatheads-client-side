@@ -8,13 +8,14 @@ var newToken = (user) => {
 };
 const register = async (req, res) => {
   try {
-    console.log(req.body.email);
+    // console.log(req.body.email);
     let user = await User.findOne({ email: req.body.email }).lean().exec();
     if (user) return res.send("User already exists");
-    //   console.log("kriti")
+      console.log("kriti")
     const Token = newToken(user);
+    console.log("j")
     user = await User.create(req.body);
-    // console.log(user)
+    console.log(user)
 
     return res.render("login.ejs", { user });
   } catch (err) {
