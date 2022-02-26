@@ -35,7 +35,7 @@ app.set("view Engine", "ejs");
 
 // all page redirection
 //home pager//
-app.get("", async (req, res) => {
+app.get("/", async (req, res) => {
   return res.render("home.ejs");
 });
 
