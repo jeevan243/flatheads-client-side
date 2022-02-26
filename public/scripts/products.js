@@ -10,7 +10,7 @@ async function callProudcts() {
     console.log("arr", arr);
     displayProducts(arr);
   } catch (error) {
-    return res.send(error);
+    console.log(error.message);
   }
 }
 
