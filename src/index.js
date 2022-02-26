@@ -15,7 +15,7 @@ const parseJson = express.json({ extended: false });
 const checksum_lib = require("./Paytm/checksum");
 const config = require("./Paytm/config");
 
-const Port1 = process.env.Port || 1234;
+let Port1 = process.env.Port || 1234;
 const app = express();
 app.use(express.json());
 
