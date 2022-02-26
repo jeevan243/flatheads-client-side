@@ -4,6 +4,7 @@ require("dotenv").config();
 const { register, signin } = require("./controllers/auth.controller");
 const passport = require("./config/google_oauth");
 const productsContrller = require("./controllers/product.controller");
+var port = process.env.PORT || 1234;
 
 const https = require("https");
 const qs = require("querystring");
@@ -253,10 +254,10 @@ app.get("*", async (req, res) => {
   return res.render("404.ejs");
 });
 
-app.listen(process.env.PORT || 1234, async (req, res) => {
+app.listen(port, async (req, res) => {
   try {
     await connect();
-    console.log(`Connected to the 1234`);
+    console.log(`Connected to the ${port}`);
   } catch (error) {
     console.log(error.message);
   }
