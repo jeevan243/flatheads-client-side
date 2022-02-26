@@ -15,7 +15,6 @@ const parseJson = express.json({ extended: false });
 const checksum_lib = require("./Paytm/checksum");
 const config = require("./Paytm/config");
 
-let Port1 = process.env.PORT || 1234;
 const app = express();
 app.use(express.json());
 
@@ -254,10 +253,10 @@ app.get("*", async (req, res) => {
   return res.render("404.ejs");
 });
 
-app.listen(Port1, async (req, res) => {
+app.listen(process.env.PORT || 1234, async (req, res) => {
   try {
     await connect();
-    console.log(`Connected to the ${Port1}`);
+    console.log(`Connected to the 1234`);
   } catch (error) {
     console.log(error.message);
   }
