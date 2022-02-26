@@ -8,9 +8,11 @@ const passport = require("./config/google_oauth");
 
 const productsContrller = require("./controllers/product.controller");
 
-app.use(express.urlencoded({
-  extended: true
-}))
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 
 const { register, signin } = require("./controllers/auth.controller");
 var port = process.env.PORT || 1234;
@@ -24,11 +26,6 @@ const parseJson = express.json({ extended: false });
 
 const checksum_lib = require("./paytm/checksum");
 const config = require("./paytm/config");
-
-
-
-
-
 
 app.get("/register", async (req, res) => {
   return res.render("register.ejs");
@@ -138,7 +135,7 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
     params["ORDER_ID"] = "TEST_" + new Date().getTime();
     params["CUST_ID"] = paymentDetails.customerId;
     params["TXN_AMOUNT"] = paymentDetails.amount;
-    params["CALLBACK_URL"] = "http://localhost:1234/callback";
+    params["CALLBACK_URL"] = "https://flatheads-official.herokuapp.com";
     params["EMAIL"] = paymentDetails.customerEmail;
     params["MOBILE_NO"] = paymentDetails.customerPhone;
 
