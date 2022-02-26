@@ -4,7 +4,7 @@
   font-size: 14px;
 }
 
-.footer hr{
+.footer hr {
   width: 100%;
   margin: 0;
   /* margin: 2% 0; */
@@ -92,6 +92,17 @@ hr {
   gap: 1rem;
   color: #333333;
   line-height: 22px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-form > .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+  }
 }
 .footer-form .content .col > p {
   padding-top: 10px;
