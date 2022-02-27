@@ -232,7 +232,8 @@ app.post("/callback", (req, res) => {
             var _result = JSON.parse(response);
             if (_result.STATUS == "TXN_SUCCESS") {
               // res.send("payment sucess");
-              res.redirect("/thankyou");
+              // res.redirect("/thankyou");
+              window.location.href = "/thankyou";
             } else {
               // res.send("payment failed");
               res.send(
